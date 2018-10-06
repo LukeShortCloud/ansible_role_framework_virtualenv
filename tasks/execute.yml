@@ -1,0 +1,5 @@
+---
+- name: Execute a command in the virtualenv
+  shell: "{{ virtualenv_path_full }}/bin/{{ virtualenv_cmd }}"
+  args:
+    warn: false

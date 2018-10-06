@@ -1,0 +1,8 @@
+---
+- name: Include OS specific variables
+  include_vars:
+    file: "{{ ansible_os_family }}.yml"
+
+- name: Include additional tasks
+  # present, absent, execute
+  include_tasks: "{{ virtualenv_state }}.yml"

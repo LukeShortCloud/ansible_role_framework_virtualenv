@@ -1,0 +1,2 @@
+---
+virtualenv_path_full: "{{ virtualenv_path }}/{{ virtualenv_name }}"

@@ -1,0 +1,3 @@
+---
+virtualenv_name: "virtualenv"
+virtualenv_path: "{{ ansible_user_dir }}"

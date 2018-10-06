@@ -1,0 +1,5 @@
+---
+- name: Remove the virtualenv
+  file:
+    path: "{{ virtualenv_path_full }}"
+    state: absent

@@ -1,0 +1,14 @@
+---
+- name: Installing virtualenv
+  package:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ virtualenv_packages }}"
+  become: true
+  tags:
+    - become
+
+- name: Create the virtualenv
+  command: "virtualenv {{ virtualenv_path_full }}"
+  args:
+    creates: "{{ virtualenv_path_full }}"
